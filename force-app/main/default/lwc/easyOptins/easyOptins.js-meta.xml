@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="easyOptins">
+    <apiVersion>46.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+    <target>lightning__AppPage</target>
+    <target>lightning__RecordPage</target>
+    <target>lightning__HomePage</target>
+    <target>lightningCommunity__Default</target>   
+    </targets>
+
+    <targetConfigs>
+    <targetConfig targets="lightning__RecordPage, lightningCommunity__Default, lightning__AppPage, lightning__HomePage">
+
+        <property name="title" type="String" default="Optins Management" label="Title"/>
+        <property name="icon" type="String" default="action:announcement" label="Icon"/>
+
+        <property name="optin_label" type="String" default="Optin" label="Optin label"/>
+        <property name="optout_label" type="String" default="Optout" label="Optout label"/>
+
+        <property name="opt1_title" type="String" default="Email" label="Optin 1 label"/>
+
+        <property name="opt2_title" type="String" default="SMS" label="Optin 2 label"/>
+
+        <property name="opt3_title" type="String" default="Phone" label="Optin 3 label"/>
+
+        <property name="opt4_title" type="String" default="Postal" label="Optin 4 label"/>
+
+        </targetConfig>
+    </targetConfigs>
+
+
+</LightningComponentBundle>

@@ -1,0 +1,74 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-card__header">
+                <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__body slds-truncate">
+                        <h2><span class="slds-text-heading_small">
+                                <lightning-icon class="card-icon slds-icon_container" icon-name={icon} size="small">
+                                </lightning-icon>
+                                <span class="slds-m-left_small" style="font-weight:700">{title}</span>
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <!-- Toggle 1 -->
+                    <div class="slds-form-element">
+                        <label class="slds-checkbox_toggle slds-grid">
+                            <span class="slds-form-element__label slds-m-bottom_none">{opt1_title}</span>
+                            <input type="checkbox" name="checkbox-toggle-15" value="checkbox-toggle-15" aria-describedby="checkbox-toggle-15" onclick={setV1} checked={getV1}>
+                            <span id="checkbox-toggle-15" class="slds-checkbox_faux_container" aria-live="assertive">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-checkbox_on">{optin_label}</span>
+                            <span class="slds-checkbox_off">{optout_label}</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Toggle 2 -->
+                    <div class=" slds-form-element">
+                        <label class="slds-checkbox_toggle slds-grid">
+                            <span class="slds-form-element__label slds-m-bottom_none ">{opt2_title}</span>
+                            <input type="checkbox" name="checkbox-toggle-16" value="checkbox-toggle-16" aria-describedby="checkbox-toggle-16" onclick={setV2} checked={getV2}/>
+                            <span id="checkbox-toggle-16" class="slds-checkbox_faux_container" aria-live="assertive">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-checkbox_on">{optin_label}</span>
+                            <span class="slds-checkbox_off">{optout_label}</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="slds-col">
+                    <!-- Toggle 3 -->
+                    <div class="slds-form-element">
+                        <label class="slds-checkbox_toggle slds-grid">
+                            <span class="slds-form-element__label slds-m-bottom_none">{opt3_title}</span>
+                            <input type="checkbox" name="checkbox-toggle-17" value="checkbox-toggle-17" aria-describedby="checkbox-toggle-17" onclick={setV3} checked={getV3}/>
+                            <span id="checkbox-toggle-17" class="slds-checkbox_faux_container" aria-live="assertive">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-checkbox_on">{optin_label}</span>
+                            <span class="slds-checkbox_off">{optout_label}</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Toggle 4 -->
+                    <div class="slds-form-element">
+                        <label class="slds-checkbox_toggle slds-grid">
+                            <span class="slds-form-element__label slds-m-bottom_none">{opt4_title}</span>
+                            <input type="checkbox" name="checkbox-toggle-18" value="checkbox-toggle-18" aria-describedby="checkbox-toggle-18" onclick={setV4} checked={getV4}/>
+                            <span id="checkbox-toggle-18" class="slds-checkbox_faux_container" aria-live="assertive">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-checkbox_on">{optin_label}</span>
+                            <span class="slds-checkbox_off">{optout_label}</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+</template>
